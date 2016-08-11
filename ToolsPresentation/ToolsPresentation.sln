@@ -20,6 +20,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{89EC
 		Script.js = Script.js
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{F77FAA56-3216-499F-AC3E-08C05231AAC1}"
+	ProjectSection(SolutionItems) = preProject
+		webcompiler-demo.png = webcompiler-demo.png
+		webcompiler-logo.PNG = webcompiler-logo.PNG
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		ToolsPresentation\ToolsPresentation.projitems*{8be03c6a-5dd9-4ded-8a35-2fac8b19eb66}*SharedItemsImports = 13
@@ -30,5 +36,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{E75F703A-830A-4D8F-B504-0C4DC94AB071} = {9EE116A5-A6C2-4DFB-BF92-EED517D6CA64}
 		{89EC0953-91E1-489A-B7CA-78464D3DD35F} = {9EE116A5-A6C2-4DFB-BF92-EED517D6CA64}
+		{F77FAA56-3216-499F-AC3E-08C05231AAC1} = {9EE116A5-A6C2-4DFB-BF92-EED517D6CA64}
 	EndGlobalSection
 EndGlobal
