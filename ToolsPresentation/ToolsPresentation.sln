@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ToolsPresentation", "ToolsPresentation\ToolsPresentation.shproj", "{8BE03C6A-5DD9-4DED-8A35-2FAC8B19EB66}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9EE116A5-A6C2-4DFB-BF92-EED517D6CA64}"
+	ProjectSection(SolutionItems) = preProject
+		index.html = index.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Styles", "Styles", "{E75F703A-830A-4D8F-B504-0C4DC94AB071}"
+	ProjectSection(SolutionItems) = preProject
+		layout.css = layout.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{89EC0953-91E1-489A-B7CA-78464D3DD35F}"
+	ProjectSection(SolutionItems) = preProject
+		Script.js = Script.js
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		ToolsPresentation\ToolsPresentation.projitems*{8be03c6a-5dd9-4ded-8a35-2fac8b19eb66}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E75F703A-830A-4D8F-B504-0C4DC94AB071} = {9EE116A5-A6C2-4DFB-BF92-EED517D6CA64}
+		{89EC0953-91E1-489A-B7CA-78464D3DD35F} = {9EE116A5-A6C2-4DFB-BF92-EED517D6CA64}
+	EndGlobalSection
+EndGlobal
