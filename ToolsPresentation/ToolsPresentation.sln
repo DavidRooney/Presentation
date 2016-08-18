@@ -22,6 +22,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{89EC
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{F77FAA56-3216-499F-AC3E-08C05231AAC1}"
 	ProjectSection(SolutionItems) = preProject
+		bbl-catlight-notification.png = bbl-catlight-notification.png
+		bbl-catlight-traystatus.jpg = bbl-catlight-traystatus.jpg
 		bbl-ghostdoc-plugin.jpg = bbl-ghostdoc-plugin.jpg
 		bbl-minifier-plugin.png = bbl-minifier-plugin.png
 		bbl-postman-logo.png = bbl-postman-logo.png
