@@ -10,10 +10,25 @@
 <body>
     <div id="impress">
 
+        <!-- Title -->
         <div id="title" class="step slide-container" data-x="0" data-y="0">
             <h1>Brown Bag Lunch - Tools</h1>
         </div>
 
+        <!-- Quick intro / story / explaination -->
+        <div id="intro" class="step slide-container" data-x="0" data-y="1500" data-z="-1000">
+            <div class="slide-container__box">
+                <h2>Why are we having this Brown Bag Lunch?</h2>
+                <ul>
+                    <li>Promote Communication</li>
+                    <li>Add to the Tech Radar</li>
+                    <li>Get people thinking about tools they could be using</li>
+                </ul>
+                <div class="speaker-icon">D</div>
+            </div>
+        </div>
+
+        <!-- Funny gif -->
         <div id="what" class="step slide-container" data-x="1500" data-y="0">
             <div class="slide-container__box">
                 <h2>What are tools?</h2>
@@ -21,13 +36,23 @@
             </div>
         </div>
 
+        <!-- What are tools -->
         <div id="what-2" class="step slide-container" data-x="3000" data-y="0">
             <div class="slide-container__box">
                 <h2>What are tools?</h2>
-                bulletted list of what tools are to a developer. expand on these points.
+                <p>Anything that will increase productivity and make our lives easier when coding.</p>
+                <ul>
+                    <li>IDE plug ins</li>
+                    <li>Browser plugins</li>
+                    <li>Desktop or mobile apps</li>
+                    <li>Online services</li>
+                    <li>Basically, turn us into the guy on the next slide!</li>
+                </ul>
+                <div class="speaker-icon">D</div>
             </div>
         </div>
 
+        <!-- Another funny gif -->
         <div id="why" class="step slide-container" data-x="4500" data-y="0">
             <div class="slide-container__box">
                 <h2>Why use tools?</h2>
@@ -35,20 +60,22 @@
             </div>
         </div>
 
-        <div id="why-2" class="step slide-container" data-x="6000" data-y="0">
-            <div class="slide-container__box">
-                <h2>Why use tools?</h2>
-                bulleted list of reasons why we need and use tools. expand on these in the talk.
-            </div>
-        </div>
-
-        <div id="intro" class="step slide-container" data-x="7500" data-y="0">
+        <!-- Presentation Overview -->
+        <div id="contents" class="step slide-container" data-x="7500" data-y="0">
             <div class="slide-container__box">
                 <h2>Overview</h2>
-                Quick talk about the talk overview. Areas, demoing a tool followed by any group discussion.
+                <p>What we will discuss in this talk. We will demo/talk about a few tools and have a discussion to discover any tools other people use.</p>
+                <ul>
+                    <li>Visual Studio Extensions</li>
+                    <li>Apps</li>
+                    <li>Chrome Plugins</li>
+                    <li>Online Tools</li>
+                </ul>
+                <div class="speaker-icon">D</div>
             </div>
         </div>
 
+        <!-- Visual Studio Extensions - Overview -->
         <div id="area-1" class="step slide-container" data-x="9000" data-y="0">
             <div class="slide-container__box">
                 <h2>Visual Studio Extensions</h2>
@@ -57,20 +84,24 @@
                     <li>BundlerMinifier</li>
                     <li>GhostDoc</li>
                 </ul>
+                <div class="speaker-icon">D</div>
             </div>
         </div>
 
+        <!-- Visual Studio Extensions - Web Compiler -->
         <div id="tool-1" class="step slide-container" data-x="10500" data-y="0">
             <div class="slide-container__box">
                 <h2>Web Compiler <span><img src="webcompiler-logo.PNG" style="height: 30px; width: 30px;" /></span></h2>
                 <div class="row">
                     <div class="col-2">
-                        <p>Features:</p>
-                        <ul>
-                            <li>LESS</li>
-                            <li>SASS</li>
-                        </ul>
-
+                        <div>
+                            <p>
+                                A tool used to compile SASS, LESS, JSX, ES6 and CoffeeScript.
+                            </p>
+                            <p>
+                                Saving a source file triggers re-compiling automatically.
+                            </p>
+                        </div>
                         <p>Useful links:</p>
                         <ul>
                             <li><a href="https://github.com/madskristensen/WebCompiler">Github</a></li>
@@ -85,11 +116,23 @@
             </div>
         </div>
 
+        <!-- Visual Studio Extensions - Bundler & Minifier -->
         <div id="tool-2" class="step slide-container" data-x="12000" data-y="0">
             <div class="slide-container__box">
-                <h2>BundlerMinifier</h2>
+                <h2>Bundler & Minifier</h2>
                 <div class="row">
                     <div class="col-2">
+                        <div>
+                            <p>
+                                A tool used to Bundle CSS, JavaScript or HTML files into a single output file. We mainly use this to quickly minify JS files.
+                            </p>
+                            <p>
+                                Saving a source file triggers re-bundling automatically
+                            </p>
+                            <p>
+                                Option to convert to Gulp. Possibly useful for Carkeys? We have not used this feature yet.
+                            </p>
+                        </div>
                         <p>Useful links:</p>
                         <ul>
                             <li><a href="https://github.com/madskristensen/BundlerMinifier">Github</a></li>
@@ -97,13 +140,21 @@
                         </ul>
                     </div>
                     <div class="col-2">
-                        <img src="bbl-minifier-plugin.png" />
+                        <div class="multi-image">
+                            <div class="multi-image__top">
+                                <img src="bbl-bundleminifier-1.png" />
+                            </div>
+                            <div class="multi-image__bottom">
+                                <img src="bbl-minifier-plugin.png" />
+                            </div>
+                        </div>
                     </div>
+                    <div class="speaker-icon">D</div>
                 </div>
-                <div class="speaker-icon"></div>
             </div>
         </div>
 
+        <!-- Visual Studio Extensions - GhostDoc -->
         <div id="tool-3" class="step slide-container" data-x="13500" data-y="0">
             <div class="slide-container__box">
                 <h2>GhostDoc</h2>
@@ -120,26 +171,22 @@
                         <img src="bbl-ghostdoc-plugin.jpg" />
                     </div>
                 </div>
-                <div class="speaker-icon"></div>
+                <div class="speaker-icon">S</div>
             </div>
         </div>
 
+        <!-- Visual Studio Extensions - Discussion -->
         <div id="discussion-1" class="step slide-container" data-x="15000" data-y="0">
             <div class="slide-container__box">
                 <h2>Group Discussion</h2>
-                Any questions or thoughts?
-                <ul>
-                    <li>Web Compiler</li>
-                    <li>BundlerMinifier</li>
-                    <li>GhostDoc</li>
-                </ul>
+                Any questions, thoughts or other tools used?
             </div>
         </div>
 
+        <!-- APPS - Overview -->
         <div id="area-2" class="step slide-container" data-x="16500" data-y="0">
             <div class="slide-container__box">
                 <h2>Apps</h2>
-                List tools we will talk about.
                 <ul>
                     <li>Postman</li>
                     <li>Catlight</li>
@@ -150,6 +197,7 @@
             </div>
         </div>
 
+        <!-- APPS - Postman -->
         <div id="tool-4" class="step slide-container" data-x="18000" data-y="0">
             <div class="slide-container__box">
                 <h2>Postman</h2>
@@ -170,6 +218,7 @@
             </div>
         </div>
 
+        <!-- APPS - Catlight -->
         <div id="tool-5" class="step slide-container" data-x="19500" data-y="0">
             <div class="slide-container__box">
                 <h2>Catlight</h2>
@@ -182,7 +231,7 @@
                         </ul>
                     </div>
                     <div class="col-2">
-                        <img src="bbl-catlight-notification.png"/>
+                        <img src="bbl-catlight-notification.png" />
                         <img src="bbl-catlight-traystatus.jpg" />
                     </div>
                 </div>
@@ -190,41 +239,124 @@
             </div>
         </div>
 
+        <!-- APPS - Google Keep -->
         <div id="tool-6" class="step slide-container" data-x="21000" data-y="0">
             <div class="slide-container__box">
                 <h2>Google Keep</h2>
-                put an image here and talk. point out reasons why you use it over others.
+                <div class="row">
+                    <div class="col-2">
+                        <div>
+                            <p>
+                                A simple note keeping app available on all devices and Operating systems as well as having a web version and chrome extension.
+                            </p>
+                            <p>
+                                Lots out there the same. examples: Evernote, Microsoft OneNote
+                            </p>
+                            <p>
+                                Benfits:
+                                <ul>
+                                    <li>Free</li>
+                                    <li>Simple to use</li>
+                                    <li>Simple organise using labels, colours and archiving</li>
+                                    <li>Scheduled reminders</li>
+                                    <li>Archiving</li>
+                                    <li>Can add images to individual notes</li>
+                                    <li>Works on any device</li>
+                                    <li>Web version</li>
+                                </ul>
+                            </p>
+                            <p>
+                                Links to a gmail account so can set up personal and work versions very easily and switch between the 2.
+                            </p>
+                        </div>
+                        <p>Useful links:</p>
+                        <ul>
+                            <li><a href="https://www.google.com/keep/">Website</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-2">
+                        <div class="multi-image">
+                            <div class="multi-image__top">
+                                <img src="bbl-google-keep.png" />
+                            </div>
+                            <div class="multi-image__bottom">
+                                <img src="bbl-google-keep-2.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="speaker-icon">D</div>
+                </div>
             </div>
         </div>
 
+        <!-- APPS - Todoist -->
         <div id="tool-7" class="step slide-container" data-x="22500" data-y="0">
             <div class="slide-container__box">
                 <h2>Todoist</h2>
-                put an image here and talk and demo. give examples of when it has been used. explain how this functionality could be added into JIRA but is also useful with it's phone app.
+                <div class="row">
+                    <div class="col-2">
+                        <div>
+                            <p>
+                                A simple checklist app available on all devices and Operating systems as well as having a web version.
+                            </p>
+                            <p>
+                                Lots out there the same. examples: Google Keep, Microsoft OneNote, JIRA
+                            </p>
+                            <p>
+                                Benfits:
+                                <ul>
+                                    <li>Free</li>
+                                    <li>Very simple to use</li>
+                                    <li>Simple organise using categories</li>
+                                    <li>Scheduled reminders</li>
+                                    <li>Collaboration - invite people to checklists. Assigning items to individuals</li>
+                                    <li>Group items into 1 item</li>
+                                    <li>Works on any device</li>
+                                    <li>Web version</li>
+                                </ul>
+                            </p>
+                            <p>
+                                Links to a gmail account so can set up personal and work versions very easily and switch between the 2.
+                            </p>
+                        </div>
+                        <p>Useful links:</p>
+                        <ul>
+                            <li><a href="https://www.google.com/keep/">Website</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-2">
+                        <div class="multi-image">
+                            <div class="multi-image__top">
+                                <img src="bbl-todoist.PNG" />
+                            </div>
+                            <div class="multi-image__bottom">
+                                <img src="bbl-google-keep-2.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="speaker-icon">D</div>
+                </div>
             </div>
         </div>
 
+        <!-- APPS - Instapaper -->
         <div id="tool-8" class="step slide-container" data-x="24000" data-y="0">
             <div class="slide-container__box">
                 <h2>Instapaper</h2>
                 put an image here and talk and demo. Explain that there is a chrome plugin to make this easier. explain when I use it.
+                <div class="speaker-icon">D</div>
             </div>
         </div>
 
+        <!-- APPS - Discussion -->
         <div id="discussion-2" class="step slide-container" data-x="25500" data-y="0">
             <div class="slide-container__box">
                 <h2>Group Discussion</h2>
-                Any questions or thoughts?
-                <ul>
-                    <li>Postman</li>
-                    <li>Catlight</li>
-                    <li>Google Keep</li>
-                    <li>Todoist</li>
-                    <li>Instapaper</li>
-                </ul>
+                Any questions, thoughts or other tools used?
             </div>
         </div>
 
+        <!--  -->
         <div id="area-3" class="step slide-container" data-x="27000" data-y="0">
             <div class="slide-container__box">
                 <h2>Chrome Plugins</h2>
@@ -236,27 +368,34 @@
             </div>
         </div>
 
+        <!--  -->
         <div id="tool-9" class="step slide-container" data-x="28500" data-y="0">
             <div class="slide-container__box">
                 <h2>Web Developer</h2>
                 put an image here and talk and demo.
             </div>
+            <div class="speaker-icon">D</div>
         </div>
 
+        <!--  -->
         <div id="tool-10" class="step slide-container" data-x="30000" data-y="0">
             <div class="slide-container__box">
                 <h2>Wappalyser</h2>
                 put an image here and talk and demo.
+                <div class="speaker-icon">D</div>
             </div>
         </div>
 
+        <!--  -->
         <div id="tool-11" class="step slide-container" data-x="31500" data-y="0">
             <div class="slide-container__box">
                 <h2>Browser Calories</h2>
                 put an image here and talk and demo.
+                <div class="speaker-icon">S</div>
             </div>
         </div>
 
+        <!--  -->
         <div id="tool-12" class="step slide-container" data-x="33000" data-y="0">
             <div class="slide-container__box">
                 <h2>CSS Viewer</h2>
@@ -274,6 +413,7 @@
             </div>
         </div>
 
+        <!--  -->
         <div id="discussion-3" class="step slide-container" data-x="34500" data-y="0">
             <div class="slide-container__box">
                 <h2>Group Discussion</h2>
@@ -281,6 +421,7 @@
             </div>
         </div>
 
+        <!--  -->
         <div id="area-4" class="step slide-container" data-x="36000" data-y="0">
             <div class="slide-container__box">
                 <h2>Online Tools</h2>
@@ -291,13 +432,16 @@
             </div>
         </div>
 
+        <!--  -->
         <div id="tool-13" class="step slide-container" data-x="37500" data-y="0">
             <div class="slide-container__box">
                 <h2>TestMyCss</h2>
                 put an image here and talk and demo.
+                <div class="speaker-icon">S</div>
             </div>
         </div>
 
+        <!--  -->
         <div id="tool-14" class="step slide-container" data-x="39000" data-y="0">
             <div class="slide-container__box">
                 <h2>Regex101</h2>
@@ -309,13 +453,16 @@
             </div>
         </div>
 
+        <!--  -->
         <div id="tool-15" class="step slide-container" data-x="40500" data-y="0">
             <div class="slide-container__box">
                 <h2>CodePen</h2>
                 put an image here and talk and demo.
+                <div class="speaker-icon">D</div>
             </div>
         </div>
 
+        <!--  -->
         <div id="discussion-4" class="step slide-container" data-x="42000" data-y="0">
             <div class="slide-container__box">
                 <h2>Group Discussion</h2>
@@ -323,6 +470,7 @@
             </div>
         </div>
 
+        <!--  -->
         <div id="end-1" class="step slide-container" data-x="43500" data-y="0">
             <div class="slide-container__box">
                 <h2>Useful Links</h2>
@@ -330,6 +478,9 @@
             </div>
         </div>
 
+        <!-- Final End slide which zooms the whole viewpoint out to see the entire presentation -->
+        <div id="end-2" class="step slide-container" data-x="0" data-y="0" data-z="20000">
+        </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/impress.js/0.5.3/impress.min.js"></script>
