@@ -16,6 +16,7 @@ h1 {
 
 h2 {
   font-size: 40px;
+  padding-bottom: 50px;
 }
 
 h1, h2, h3, h4 {
@@ -50,10 +51,31 @@ h1, h2, h3, h4 {
   height: 100%;
 }
 
+.slide-container .slide-container__box__centre {
+    margin: auto 200px;
+}
+
+.slide-container ul.large {
+    font-size: 30px;
+}
+
+.slide-container p.large-centre {
+    font-size: 52px;
+    text-align: center;
+    padding-top: 50px;
+}
+
 .speaker-icon {
     position: absolute;
     bottom: 10px;
     right: 10px;
+    opacity: 0.3;
+}
+
+.demo-icon {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
     opacity: 0.3;
 }
 
