@@ -29,10 +29,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{F77FAA
 		bbl-ghostdoc-plugin.jpg = bbl-ghostdoc-plugin.jpg
 		bbl-google-keep-2.jpg = bbl-google-keep-2.jpg
 		bbl-google-keep.png = bbl-google-keep.png
+		bbl-instapaper.PNG = bbl-instapaper.PNG
 		bbl-minifier-plugin.png = bbl-minifier-plugin.png
 		bbl-postman-logo.png = bbl-postman-logo.png
 		bbl-regex101-example.jpg = bbl-regex101-example.jpg
 		bbl-todoist.PNG = bbl-todoist.PNG
+		bbl-web-developer.PNG = bbl-web-developer.PNG
 		webcompiler-demo.png = webcompiler-demo.png
 		webcompiler-logo.PNG = webcompiler-logo.PNG
 	EndProjectSection
