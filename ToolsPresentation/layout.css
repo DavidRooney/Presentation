@@ -129,3 +129,9 @@ h1, h2, h3, h4 {
 .multi-image .multi-image__top {
     padding-bottom: 40px;
 }
+
+.expand-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
