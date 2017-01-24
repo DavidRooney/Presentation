@@ -3,8 +3,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>Brown bag lunch - tools!</title>
-    <!--<link href="//fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic" rel="stylesheet">-->
+    <title>Svn To git - Lessons Learned</title>
     <link rel="stylesheet" href="layout.css">
 
     <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
@@ -14,708 +13,135 @@
 
         <!-- Title -->
         <div id="title" class="step slide-container" data-x="-2000" data-y="-1500">
-            <h1>Brown Bag Lunch - Tools</h1>
+            <h1>SVN to Git Migration</h1>
         </div>
 
         <!-- Quick intro / story / explaination -->
         <div id="intro" class="step slide-container" data-x="0" data-y="-1500">
             <div class="slide-container__box">
-                <h2>Why are we having this Brown Bag Lunch?</h2>
+                <h2>Approach & Aims</h2>
                 <div class="slide-container__box__centre">
-                    <ul class="large">
-                        <li>Promote Communication</li>
-                        <li>Add to the Tech Radar</li>
-                        <li>Get people thinking about tools they could be using</li>
+                    <ul>
+                        <li><a href="https://www.atlassian.com/git/tutorials/svn-to-git-prepping-your-team-migration">Make use of an already existing guide</a></li>
+                        <li>Retain a complete history of the code</li>
+                        <li>No need to go back to the SVN repo</li>
+                        <li>Keep svn as a "just in case" back up</li>
+                        <li>Better continuious integration using Git branches, Git Hooks & Git workflows</li>
                     </ul>
                 </div>
-                <p class="large-centre">
-                    So...what are tools?
-                </p>
-                <div class="speaker-icon">D</div>
             </div>
         </div>
 
-        <!-- Funny gif -->
-        <div id="what" class="step slide-container" data-x="0" data-y="2000" data-scale="5">
+        <!-- Slide 1 -->
+        <div id="slide-1" class="step slide-container" data-x="0" data-y="2000" data-scale="5">
             <div class="slide-container__box">
-                <h2>NOT THIS!</h2>
-                <img src="https://media.giphy.com/media/12bVDtXPOzYwda/giphy.gif" />
-            </div>
-        </div>
-
-        <!-- What are tools -->
-        <div id="what-2" class="step slide-container" data-x="0" data-y="6000">
-            <div class="slide-container__box">
-                <h2>What are tools?</h2>
+                <h2>Challenges</h2>
                 <div class="slide-container__box__centre">
-                    <p>Anything that will increase productivity and make our lives easier when coding.</p>
-                    <ul class="large">
-                        <li>IDE plug ins</li>
-                        <li>Browser plugins</li>
-                        <li>Desktop / mobile apps</li>
-                        <li>Online services</li>
-                        <li>Basically, turn us into a coding wizard!</li>
+                    <ul>
+                        <li>Developers to move to Git without disruption</li>
+                        <li>Ability to sync SVN to Git during above process</li>
+                        <li>Retain a comprehesive code history</li>
                     </ul>
-                    <div class="speaker-icon">D</div>
                 </div>
             </div>
         </div>
 
-        <!-- Another funny gif -->
-        <div id="why" class="step slide-container" data-x="0" data-y="10000" data-scale="5">
+        <!-- Slide 2 -->
+        <div id="slide-2" class="step slide-container" data-x="0" data-y="6000">
+            <h2>LIVE DEMO</h2>
+        </div>
+
+        <!-- Slide 3 -->
+        <div id="slide-3" class="step slide-container" data-x="0" data-y="10000" data-scale="5">
+            <h2>Lessons Learned</h2>
+        </div>
+
+        <!-- Slide 4 -->
+        <div id="slide-4" class="step slide-container" data-x="5000" data-y="10000">
             <div class="slide-container__box">
-                <h2>Coding Wizard!</h2>
+                <h2>1. Research GIT!</h2>
+                <p>Take the time to read up about GIT. Try some commands out.</p>
+                <p>or risk diving straight in like I did!</p>
+            </div>
+        </div>
+
+        <!-- Slide 5 -->
+        <div id="slide-5" class="step slide-container" data-x="12000" data-y="10000" data-scale="5">
+            <div class="slide-container__box">
+                <img src="https://media.giphy.com/media/dsBQoITMfRV0k/giphy.gif" />
+            </div>
+        </div>
+
+        <!-- Slide -->
+        <div id="slide-6" class="step slide-container" data-x="22000" data-y="10000" data-scale="5">
+            <div class="slide-container__box">
+                <h2>2. Connection drops</h2>
+                <p>Run on a server</p>
+            </div>
+        </div>
+
+        <!-- Slide  -->
+        <div id="slide-7" class="step slide-container" data-x="32000" data-y="10000" data-scale="5">
+            <div class="slide-container__box">
+                <h2>3. git svn clone</h2>
+                <div class="slide-container__box__centre">
+                    <ul class="large">
+                        <li>Be careful of a complicated SVN Repo</li>
+                        <li>More branches = More time to run</li>
+                        <li>Excluding a branch can cause havoc</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="slide-8" class="step slide-container" data-x="46000" data-y="10000" data-scale="5">
+            <div class="slide-container__box">
+                <div class="slide-container__box__centre">
+                    <img src="https://media3.giphy.com/media/DfSXiR60W9MVq/200.gif#21" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide  -->
+        <div id="slide-9" class="step slide-container" data-x="56000" data-y="10000" data-scale="8">
+            <div class="slide-container__box">
+                <h2>4. Only migrating the trunk</h2>
+                <div class="slide-container__box__centre">
+                    <ul class="large">
+                        <li>No GIT branches</li>
+                        <li>No record of deleted files</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide  -->
+        <div id="slide-10" class="step slide-container" data-x="56000" data-y="2000">
+            <div class="slide-container__box">
+                <h2>5. Persevere</h2>
+                <p>Git may feel like this at first</p>
+                <div class="slide-container__box__centre">
+                    <img src="https://media0.giphy.com/media/ZKZiW6GSx8eSA/200.gif#1" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide  -->
+        <div id="slide-11" class="step slide-container" data-x="66000" data-y="2000" data-scale="5">
+            <div class="slide-container__box">
+                <p>But it wont take long to feel like this</p>
                 <img src="https://media.giphy.com/media/3o8doZFy4iPd8VBL8I/giphy.gif" />
             </div>
         </div>
 
-        <!-- Presentation Overview -->
-        <div id="contents" class="step slide-container" data-x="5000" data-y="10000">
+        <!-- Slide  -->
+        <div id="slide-12" class="step slide-container medium" data-x="76000" data-y="2000" data-scale="5">
             <div class="slide-container__box">
-                <h2>Talk Overview</h2>
-                <div class="slide-container__box__centre">
-                    <p>
-                        This is what we will discuss/demo in the talk followed by a discussion to discover any tools other people use.
-                    </p>
-                    <ul class="large">
-                        <li>Visual Studio Extensions</li>
-                        <li>Apps</li>
-                        <li>Chrome Plugins</li>
-                        <li>Online Tools</li>
-                    </ul>
-                </div>
-                <div class="speaker-icon">D</div>
+                <h2>Any questions?</h2>
+                <p><a href="https://confluenceglobal.experian.local/confluence/display/IDAAS/Migrate+from+SVN+to+GIT">Here's a guide!</a></p>
             </div>
         </div>
 
-        <!-- Visual Studio Extensions - Overview -->
-        <div id="area-1" class="step slide-container" data-x="12000" data-y="10000" data-scale="5">
-            <div class="slide-container__box">
-                <h2>Visual Studio Extensions</h2>
-                <div class="slide-container__box__centre">
-                    <ul class="large">
-                        <li>Web Compiler</li>
-                        <li>Bundler & Minifier</li>
-                        <li>GhostDoc</li>
-                    </ul>
-                    <div class="speaker-icon">D</div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Visual Studio Extensions - Web Compiler -->
-        <div id="tool-1" class="step slide-container" data-x="22000" data-y="10000" data-scale="5">
-            <div class="slide-container__box">
-                <h2>Web Compiler <span><img src="webcompiler-logo.PNG" style="height: 30px; width: 30px;" /></span></h2>
-                <div class="row">
-                    <div class="col-2">
-                        <div>
-                            <p>
-                                A tool used to compile SASS, LESS, JSX, ES6 and CoffeeScript.
-                            </p>
-                            <p>
-                                Saving a source file triggers re-compiling automatically.
-                            </p>
-                            <p>
-                                Successfully used on <b>The Study Network, My Prize Draws, Lease Plan Go</b>
-                            </p>
-                        </div>
-                        <p>Useful links:</p>
-                        <ul>
-                            <li><a href="https://github.com/madskristensen/WebCompiler">Github</a></li>
-                            <li><a href="https://visualstudiogallery.msdn.microsoft.com/3b329021-cd7a-4a01-86fc-714c2d05bb6c">Visual Studio Gallery</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-2">
-                        <img src="webcompiler-demo.png" />
-                    </div>
-                </div>
-                <div class="speaker-icon">D</div>
-            </div>
-        </div>
-
-        <!-- Visual Studio Extensions - Bundler & Minifier -->
-        <div id="tool-2" class="step slide-container" data-x="32000" data-y="10000" data-scale="5">
-            <div class="slide-container__box">
-                <h2>Bundler & Minifier</h2>
-                <div class="row">
-                    <div class="col-2">
-                        <div>
-                            <p>
-                                A tool used to Bundle CSS, JavaScript or HTML files into a single output file or into a minified version.
-                            </p>
-                            <p>
-                                Saving a source file triggers re-bundling automatically.
-                            </p>
-                            <p>
-                                Option to convert to Gulp.
-                            </p>
-                            <p>
-                                Successfully used on <b>The Study Network to minifiy Javascript files.</b>
-                            </p>
-                        </div>
-                        <p>Useful links:</p>
-                        <ul>
-                            <li><a href="https://github.com/madskristensen/BundlerMinifier">Github</a></li>
-                            <li><a href="https://visualstudiogallery.msdn.microsoft.com/9ec27da7-e24b-4d56-8064-fd7e88ac1c40">Visual Studio Gallery</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-2">
-                        <div class="multi-image">
-                            <div class="multi-image__top">
-                                <img src="bbl-bundleminifier-1.png" />
-                            </div>
-                            <div class="multi-image__bottom">
-                                <img src="bbl-minifier-plugin.png" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="speaker-icon">D</div>
-            </div>
-        </div>
-
-        <!-- Visual Studio Extensions - GhostDoc -->
-        <div id="tool-3" class="step slide-container" data-x="46000" data-y="10000" data-scale="5">
-            <div class="slide-container__box">
-                <h2>GhostDoc</h2>
-                <div class="row">
-                    <div class="col-2">
-                        <p>
-                            Allows you to quickly add comments to code. Remembering one shortcut saves you a lot of time!
-                        </p>
-                        <p>
-                            Comments based on StyleCop rules!
-                        </p>
-                        <p>
-                            Useful links:
-                        </p>
-                        <ul>
-                            <li><a href="http://submain.com/download/ghostdoc/">Download link</a></li>
-                            <li><a href="https://visualstudiogallery.msdn.microsoft.com/46A20578-F0D5-4B1E-B55D-F001A6345748">Visual Studio Gallery</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-2">
-                        <div class="multi-image">
-                            <img src="bbl-ghostdoc-plugin.jpg" />
-                        </div>
-                    </div>
-                </div>
-                <div class="demo-icon">D</div>
-                <div class="speaker-icon">S</div>
-            </div>
-        </div>
-
-        <!-- Visual Studio Extensions - Discussion -->
-        <div id="discussion-1" class="step slide-container" data-x="56000" data-y="10000" data-scale="8">
-            <div class="slide-container__box">
-                <h2>Group Discussion</h2>
-                <p>
-                    Any questions, thoughts or other tools used?
-                </p>
-                <p>
-                    Can we add anything to the Tech Radar?
-                </p>
-            </div>
-        </div>
-
-        <!-- APPS - Overview -->
-        <div id="area-2" class="step slide-container" data-x="56000" data-y="2000">
-            <div class="slide-container__box">
-                <h2>Apps</h2>
-                <div class="slide-container__box__centre">
-                    <ul class="large">
-                        <li>Postman</li>
-                        <li>Catlight</li>
-                        <li>Google Keep</li>
-                        <li>Todoist</li>
-                        <li>Instapaper</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- APPS - Postman -->
-        <div id="tool-4" class="step slide-container" data-x="66000" data-y="2000" data-scale="5">
-            <div class="slide-container__box">
-                <h2>Postman</h2>
-                <div class="row">
-                    <div class="col-2">
-                        <ul>
-                            <li>Chrome app.</li>
-                            <li>Create and send any HTTP request using the Postman request builder.</li>
-                            <li>All requests quickly accessed in history and can be saved into collections.</li>
-                            <li>Paid version - Testing and team sharing etc.</li>
-                        </ul>
-                    </div>
-                    <div class="col-2">
-                        <img src="bbl-postman-logo.png" />
-                    </div>
-                </div>
-                <div class="demo-icon">D</div>
-                <div class="speaker-icon">S</div>
-            </div>
-        </div>
-
-        <!-- APPS - Catlight -->
-        <div id="tool-5" class="step slide-container medium" data-x="76000" data-y="2000" data-scale="5">
-            <div class="slide-container__box">
-                <h2>Catlight</h2>
-                <div class="row">
-                    <div class="col-2">
-                        <ul>
-                            <li>Similar to TFS build notifications tool.</li>
-                            <li>Works with both TFS and Visual Studio Online/Team Services.</li>
-                            <li>Nicer user interface.</li>
-                        </ul>
-                    </div>
-                    <div class="col-2">
-                        <div class="multi-image">
-                            <div class="multi-image__top">
-                                <img src="bbl-catlight-notification.png" />
-                            </div>
-                            <div class="multi-image__bottom">
-                                <img src="bbl-catlight-traystatus.jpg" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="speaker-icon">S</div>
-            </div>
-        </div>
-
-        <!-- APPS - Google Keep -->
-        <div id="tool-6" class="step slide-container v2" data-x="86000" data-y="2000" data-scale="5">
-            <div class="slide-container__box">
-                <h2>Google Keep</h2>
-                <div class="row">
-                    <div class="col-2">
-                        <div>
-                            <p>
-                                A simple note keeping app.
-                            </p>
-                            <p>
-                                Similar apps. e.g: Evernote & Microsoft OneNote
-                            </p>
-                            <p>
-                                Benfits / Why I prefer:
-                                <ul>
-                                    <li>Free</li>
-                                    <li>Desktop App, Mobile Apps (iOS, Android), Web version</li>
-                                    <li>Links to gmail account</li>
-                                    <li>Simple organize using labels, colours and archiving</li>
-                                    <li>Scheduled reminders</li>
-                                    <li>Can add images to individual notes</li>
-                                </ul>
-                            </p>
-                        </div>
-                        <p>Useful links:</p>
-                        <ul>
-                            <li><a href="https://www.google.com/keep/">Website</a></li>
-                            <li><a href="https://chrome.google.com/webstore/detail/google-keep-notes-and-lis/hmjkmjkepdijhoojdojkdfohbdgmmhki?hl=en">Desktop App</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-2">
-                        <div class="multi-image">
-                            <div class="multi-image__top">
-                                <img src="bbl-google-keep.png" />
-                            </div>
-                            <div class="multi-image__bottom">
-                                <img src="bbl-google-keep-2.jpg" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="demo-icon">D & E</div>
-                <div class="speaker-icon">D</div>
-            </div>
-        </div>
-
-        <!-- APPS - Todoist -->
-        <div id="tool-7" class="step slide-container v2" data-x="96000" data-y="2000" data-scale="5">
-            <div class="slide-container__box">
-                <h2>Todoist</h2>
-                <div class="row">
-                    <div class="col-2">
-                        <div>
-                            <p>
-                                A checklist app.
-                                Lots of similar apps out there. e.g: Google Keep, Microsoft OneNote, JIRA
-                            </p>
-                            <p>
-                                Benfits / Why I prefer:
-                                <ul>
-                                    <li>Free</li>
-                                    <li>Desktop App, Mobile App, Web version</li>
-                                    <li>Very simple to use</li>
-                                    <li>Simple organise using categories</li>
-                                    <li>Scheduled reminders</li>
-                                    <li>Collaboration - invite people to checklists. Assigning items to individuals</li>
-                                    <li>Links to a gmail</li>
-                                </ul>
-                            </p>
-                        </div>
-                        <p>Useful links:</p>
-                        <ul>
-                            <li><a href="https://en.todoist.com">Website</a></li>
-                            <li><a href="https://en.todoist.com/windows">Desktop App</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-2">
-                        <div class="multi-image">
-                            <img src="bbl-todoist.PNG" />
-                        </div>
-                    </div>
-                </div>
-                <div class="demo-icon">D & E</div>
-                <div class="speaker-icon">D</div>
-            </div>
-        </div>
-
-        <!-- APPS - Instapaper -->
-        <div id="tool-8" class="step slide-container v2" data-x="106000" data-y="2000" data-scale="5">
-            <div class="slide-container__box">
-                <h2>Instapaper</h2>
-                <div class="row">
-                    <div class="col-2">
-                        <div>
-                            <p>
-                                A simple App to track articles (or even webpages) to read later.
-                            </p>
-                            <p>
-                                Benfits:
-                                <ul>
-                                    <li>Free, Simple</li>
-                                    <li>Chrome plug in to save any webpage with a single click</li>
-                                    <li>Can add notes to items saved including highlighting a single line.</li>
-                                    <li>All devices &amp; Web Version</li>
-                                </ul>
-                            </p>
-                        </div>
-                        <p>Useful links:</p>
-                        <ul>
-                            <li><a href="https://www.instapaper.com/">Website</a></li>
-                            <li><a href="https://chrome.google.com/webstore/detail/instapaper/ldjkgaaoikpmhmkelcgkgacicjfbofhh?hl=en">Chrome Extension</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-2">
-                        <div class="multi-image">
-                            <img src="bbl-instapaper.PNG" />
-                        </div>
-                    </div>
-                </div>
-                <div class="demo-icon">E</div>
-                <div class="speaker-icon">D</div>
-            </div>
-        </div>
-
-        <!-- APPS - Discussion -->
-        <div id="discussion-2" class="step slide-container" data-x="116000" data-y="2000" data-scale="8">
-            <div class="slide-container__box">
-                <h2>Group Discussion</h2>
-                <p>
-                    Any questions, thoughts or other tools used?
-                </p>
-                <p>
-                    Can we add anything to the Tech Radar?
-                </p>
-            </div>
-        </div>
-
-        <!-- Chrome Plugins - Overview -->
-        <div id="area-3" class="step slide-container" data-x="116000" data-y="-4000">
-            <div class="slide-container__box">
-                <h2>Chrome Plugins</h2>
-                <div class="slide-container__box__centre">
-                    <ul class="large">
-                        <li>Web Developer</li>
-                        <li>Wappalyser</li>
-                        <li>Google Keep</li>
-                        <li>Browser Calories</li>
-                        <li>CSS Viewer</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- Chrome Plugins - Web Developer -->
-        <div id="tool-9" class="step slide-container v2" data-x="126000" data-y="-4000" data-scale="5">
-            <div class="slide-container__box">
-                <h2>Web Developer</h2>
-                <div class="row">
-                    <div class="col-2">
-                        <div>
-                            <p>
-                                A chrome plugin that adds a lot of useful web development functions at the click of a button.
-                            </p>
-                            <p>
-                                Some Functions:
-                                <ul>
-                                    <li>Disable javascript, Css</li>
-                                    <li>Quick Form Functions like clearing all check boxes &amp; display passwords</li>
-                                    <li>Quickly clear cache, history, cookies</li>
-                                    <li>Quickly outline Headers, divs, any absolute positioned elements</li>
-                                </ul>
-                            </p>
-                        </div>
-                        <p>Useful links:</p>
-                        <ul>
-                            <li><a href="https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm">Chrome Extension</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-2">
-                        <div class="multi-image">
-                            <img src="bbl-web-developer.PNG" />
-                        </div>
-                    </div>
-                </div>
-                <div class="demo-icon">D</div>
-                <div class="speaker-icon">D</div>
-            </div>
-        </div>
-
-        <!-- Chrome Plugins - Wappalyser -->
-        <div id="tool-10" class="step slide-container v2 small-img" data-x="136000" data-y="-4000" data-scale="5">
-            <div class="slide-container__box">
-                <h2>Wappalyser</h2>
-                <div class="row">
-                    <div class="col-2">
-                        <div>
-                            <p>
-                                A chrome plugin that describes what frameworks are being used on the current website and can follow links to read about the technology being used.
-                            </p>
-                        </div>
-                        <p>Useful links:</p>
-                        <ul>
-                            <li><a href="https://chrome.google.com/webstore/detail/wappalyzer/gppongmhjkpfnbhagpmjfkannfbllamg">Chrome Extension</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-2">
-                        <div class="multi-image">
-                            <img src="bbl-wappalyser.PNG" />
-                        </div>
-                    </div>
-                </div>
-                <div class="demo-icon">D</div>
-                <div class="speaker-icon">D</div>
-            </div>
-        </div>
-
-        <!-- Chrome Plugins - Browser Calories -->
-        <div id="tool-11" class="step slide-container v2 small-img" data-x="146000" data-y="-4000" data-scale="5">
-            <div class="slide-container__box">
-                <h2>Browser Calories</h2>
-                <div class="row">
-                    <div class="col-2">
-                        <div>
-                            <p>
-                                Provides a quick overview of the websites performance.
-                            </p>
-                            <p>
-                                Can be useful when needing to quickly determine areas to improve.
-                            </p>
-                            <p>
-                                Drawback: Only works on Live websites.
-                            </p>
-                        </div>
-                        <p>Useful links:</p>
-                        <ul>
-                            <li><a href="https://chrome.google.com/webstore/detail/browser-calories/pdkibgfjegigkoaleelbkdpkgceljfco">Chrome Extension</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-2">
-                        <div class="multi-image">
-                            <img src="bbl-browser-calories.PNG" />
-                        </div>
-                    </div>
-                </div>
-                <div class="demo-icon">D</div>
-                <div class="speaker-icon">S</div>
-            </div>
-        </div>
-
-        <!-- Chrome Plugins - CSS Viewer -->
-        <div id="tool-12" class="step slide-container v2 small-img" data-x="156000" data-y="-4000" data-scale="5">
-            <div class="slide-container__box">
-                <h2>CSS Viewer</h2>
-                <div class="row">
-                    <div class="col-2">
-                        <ul>
-                            <li>Alternative to opening up Dev tools window in Chrome and using element viewer.</li>
-                        </ul>
-                    </div>
-                    <div class="col-2">
-                        <div class="multi-image">
-                            <img src="bbl-css-viewer-plugin.png" />
-                        </div>
-                    </div>
-                </div>
-                <div class="speaker-icon">S</div>
-            </div>
-        </div>
-
-        <!-- Chrome Plugins - Discussion -->
-        <div id="discussion-3" class="step slide-container v2 small-img" data-x="166000" data-y="-4000" data-scale="8">
-            <div class="slide-container__box">
-                <h2>Group Discussion</h2>
-                <p>
-                    Any questions, thoughts or other tools used?
-                </p>
-                <p>
-                    Can we add anything to the Tech Radar?
-                </p>
-            </div>
-        </div>
-
-        <!-- Online Tools - Overview -->
-        <div id="area-4" class="step slide-container" data-x="166000" data-y="-10000">
-            <div class="slide-container__box">
-                <h2>Online Tools</h2>
-                <div class="slide-container__box__centre">
-                    <ul class="large">
-                        <li>TestMyCss</li>
-                        <li>Regex101</li>
-                        <li>CodePen</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- Online Tools - TestMyCss -->
-        <div id="tool-13" class="step slide-container v2" data-x="176000" data-y="-10000" data-scale="5">
-            <div class="slide-container__box">
-                <h2>TestMyCss</h2>
-                <div class="row">
-                    <div class="col-2">
-                        <div>
-                            <p>
-                                Very quick online tool for analysing CSS. Simply pass it the css url and press GO.
-                            </p>
-                        </div>
-                        <p>Useful links:</p>
-                        <ul>
-                            <li><a href="http://www.testmycss.com/">Website</a></li>
-                            <li><a href="https://github.com/macbre/analyze-css">Github</a></li>
-                            <li><a href="http://www.testmycss.com/analyze?url=http%3A%2F%2Fwww.thestudynetwork.com%2FThemes%2FTheStudyNetwork%2FStyles%2Fsite.min.css">TSN Analysed Example</a></li>
-                            <li><a href="http://www.testmycss.com/css-validator?url=http://www.thestudynetwork.com/Themes/TheStudyNetwork/Styles/site.min.css">TSN CSS Validation Example</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-2">
-                        <div class="multi-image">
-                            <img src="bbl-testmycss.png" />
-                        </div>
-                    </div>
-                </div>
-                <div class="demo-icon">D</div>
-                <div class="speaker-icon">S</div>
-            </div>
-        </div>
-
-        <!-- Online Tools - Regex101 -->
-        <div id="tool-14" class="step slide-container v2" data-x="186000" data-y="-10000" data-scale="5">
-            <div class="slide-container__box">
-                <h2>Regex101</h2>
-                <div class="row">
-                    <div class="col-2">
-                        <div>
-                            <p>
-                                Very useful tool for testing regex, gives good explanation of your regex and matches. Quick reference panel in the bottom right particularly useful.
-                            </p>
-                        </div>
-                        <p>Useful links:</p>
-                        <ul>
-                            <li><a href="https://regex101.com/">Website</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-2">
-                        <div class="multi-image">
-                            <img src="bbl-regex101-example.jpg" />
-                        </div>
-                    </div>
-                </div>
-                <div class="demo-icon">D</div>
-                <div class="speaker-icon">S</div>
-            </div>
-        </div>
-
-        <!-- Online Tools - CodePen -->
-        <div id="tool-15" class="step slide-container v2" data-x="196000" data-y="-10000" data-scale="5">
-            <div class="slide-container__box">
-                <h2>CodePen</h2>
-                <div class="row">
-                    <div class="col-2">
-                        <div>
-                            <p>
-                                A free online tool that allows a user to create snippets of front end code.
-                            </p>
-                            <p>
-                                Features:
-                                <ul>
-                                    <li>Easily Add Html, Css and Javascript to create a snippet</li>
-                                    <li>Has compilers for HTML (e.g. Jade), CSS (e.g. SASS) and Javascript (e.g. CoffeeScript)</li>
-                                    <li>Very easy to add external libraries to the code. e.g. Bootstrap CSS, Jquery</li>
-                                    <li>Very large community that works a lot like Github</li>
-                                </ul>
-                            </p>
-                        </div>
-                        <p>Useful links:</p>
-                        <ul>
-                            <li><a href="https://codepen.io/">Website</a></li>
-                            <li><a href="http://codepen.io/RooN3y/">My CodePen</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-2">
-                        <div class="multi-image">
-                            <img src="bbl-codepen.PNG" />
-                        </div>
-                    </div>
-                </div>
-                <div class="speaker-icon">D</div>
-            </div>
-        </div>
-
-        <!-- Online Tools - Discussion -->
-        <div id="discussion-4" class="step slide-container v2" data-x="206000" data-y="-10000" data-scale="8">
-            <div class="slide-container__box">
-                <h2>Group Discussion</h2>
-                <p>
-                    Any questions, thoughts or other tools used?
-                </p>
-                <p>
-                    Can we add anything to the Tech Radar?
-                </p>
-            </div>
-        </div>
-
-        <!-- USEFUL LINKS -->
-        <div id="end-1" class="step slide-container v2" data-x="216000" data-y="-10000" data-rotate="90" data-scale="5">
-            <div class="slide-container__box">
-                <h2>Useful Links</h2>
-                <div class="slide-container__box__centre">
-                    <ul class="large">
-                        <li>
-                            <a href="https://codepen.io/RooN3y/">Dave Rooney - CodePen</a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/DavidRooney">Dave Rooney - GitHub</a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/DavidRooney/DevToolShed">Dave Rooney - Personal Tool Shed List</a>
-                        </li>
-                        <li>
-                            <a href="https://davidrooney.github.io/ToolsPresentation/ToolsPresentation/">This Presentation</a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/impress/impress.js">Learn about the framework that create this presentation - Impress.js</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- Final End slide which zooms the whole viewpoint out to see the entire presentation -->
-        <!--<div id="end-2" class="step slide-container" data-x="0" data-y="0" data-z="50000">
-        </div>-->
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/impress.js/0.5.3/impress.min.js"></script>
